@@ -1,9 +1,6 @@
 package com.appsdeveloperblog.store.productservice.rest;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/products")
@@ -19,5 +16,9 @@ public class ProductsController {
         return "HTTP GET Handled";
     }
 
+    @PutMapping
+    public String updateProduct() {
+        return "HTTP PUT Handled";
+    }
 
 }
