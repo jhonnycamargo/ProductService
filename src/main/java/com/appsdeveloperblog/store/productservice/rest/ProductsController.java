@@ -1,5 +1,6 @@
 package com.appsdeveloperblog.store.productservice.rest;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,8 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/products")
 public class ProductsController {
 
-    @RequestMapping("/get")
+    @PostMapping
     public String createProduct() {
-        return "Product details";
+        return "HTTP POST Handled";
     }
+
+
 }
