@@ -6,4 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/products")
 public class ProductsController {
+
+    @RequestMapping("/get")
+    public String createProduct() {
+        return "Product details";
+    }
 }
