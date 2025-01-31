@@ -21,4 +21,9 @@ public class ProductsController {
         return "HTTP PUT Handled";
     }
 
+    @DeleteMapping
+    public String deleteProduct() {
+        return "HTTP Delete Handled";
+    }
+
 }
